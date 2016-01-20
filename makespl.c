@@ -16,41 +16,41 @@
 double
 fi(int n, double x)
 {
-  if (n == 0)
-      return 1;
-  if (n == 1)
-      return x;
-  return 2 * x * fi(n - 1, x) - fi(n - 2, x);
+	if (n == 0)
+		return 1;
+	if (n == 1)
+		return x;
+	return 2 * x * fi(n - 1, x) - fi(n - 2, x);
 }
 
 double
 dfi(int n, double x)
 {
-  if (n == 0)
-      return 0;
-  if (n == 1)
-      return 1;
-  return 2 * fi(n - 1, x) + 2 * x * dfi(n - 1, x) - dfi(n - 2, x);
+	if (n == 0)
+		return 0;
+	if (n == 1)
+		return 1;
+	return 2 * fi(n - 1, x) + 2 * x * dfi(n - 1, x) - dfi(n - 2, x);
 }
 
 double
 d2fi(int n, double x)
 {
-  if (n == 0)
-      return 0;
-  if (n == 1)
-      return 0;
-  return 4 * dfi(n - 1, x) + 2 * x * d2fi(n - 1, x) - d2fi(n - 2, x);
+	if (n == 0)
+		return 0;
+	if (n == 1)
+		return 0;
+	return 4 * dfi(n - 1, x) + 2 * x * d2fi(n - 1, x) - d2fi(n - 2, x);
 }
 
 double
 d3fi(int n, double x)
 {
-  if (n == 0)
-    return 0;
-  if (n == 1)
-      return 0;
-  return 6 * d2fi(n - 1, x) + 2 * x * d3fi(n - 1, x) - d3fi(n - 2, x);
+	if (n == 0)
+		return 0;
+	if (n == 1)
+		return 0;
+	return 6 * d2fi(n - 1, x) + 2 * x * d3fi(n - 1, x) - d3fi(n - 2, x);
 }
 
 /* Pomocnicza f. do rysowania bazy */
