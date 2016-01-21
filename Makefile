@@ -16,7 +16,7 @@ interpolator.o: makespl.h points.h gaus/piv_ge_solver.h
 .PHONY: clean
 
 clean:
-	-rm *.o aprox intrp prosta
+	-rm *.o aprox intrp prosta spl* myplot*
 
 test:
 	./aprox -s spl1 -p test/dane.1.-4.1 -g myplot1 -f -5 -t 1 -n 100
