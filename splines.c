@@ -38,7 +38,7 @@ write_spl(spline_t *spl, FILE *ouf) {
   fprintf(ouf, "%d\n", spl->n);
   for (i = 0; i < spl->n; i++)
     fprintf(ouf, "%g %g %g %g %g\n", spl->x[i], spl->f[i], spl->f1[i],
-             spl->f2[i], spl->f3[i]);
+                                                        spl->f2[i], spl->f3[i]);
 }
 
 double
