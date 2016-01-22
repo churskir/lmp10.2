@@ -18,7 +18,7 @@ interpolator.o: makespl.h points.h gaus/piv_ge_solver.h
 clean:
 	-rm *.o aprox intrp prosta spl.* myplot*
 
-test:
+tests:
 	./aprox -s spl.1 -p test/dane.1.-4.1 -g myplot1 -f -5 -t 1 -n 100
 	./aprox -s spl.2 -p test/dane.2.5.7 -g myplot2 -f 2 -t 5 -n 300
 	./aprox -s spl.3 -p test/dane.3.0.5 -g myplot3 -f 1 -t 5.7 -n 500
